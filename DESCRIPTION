@@ -5,7 +5,8 @@ Authors@R:
     person("Eric", "Ekholm", , "eric.ekholm@gmail.com", role = c("aut", "cre"))
 Description: No cap, keeps your R code bussin. Iykyk.
 License: MIT + file LICENSE
-URL: https://github.com/ekholme/vibinverse
+URL: https://github.com/ekholme/vibinverse,
+    https://ekholme.github.io/vibinverse/
 BugReports: https://github.com/ekholme/vibinverse/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

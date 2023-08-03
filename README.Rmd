@@ -28,4 +28,48 @@ Fr you can install the development version of vibinverse from Github:
 remotes::install_github("ekholme/vibinverse")
 ```
 
-## Example
+## Examples
+
+Keep your booleans 100
+
+```{r}
+library(vibinverse)
+
+on_god == TRUE
+
+cap == FALSE
+```
+
+Think something is sus?
+
+```{r}
+# sus is just dplyr::if_else()
+
+x <- c(TRUE, FALSE, TRUE)
+
+sus(x, "frfr", "cap")
+```
+
+yeet columns out of your dataframes
+
+```{r}
+head(yeet(mtcars, c("mpg", "wt")))
+```
+
+get elements of x in y
+
+```{r}
+# just x[x %in% y]
+x <- 1:2
+y <- 1:3
+rent_free(x, y)
+```
+
+and finally, make sure your iterations are vibing
+
+```{r}
+# just purrr::map() under the hood
+z <- list(a = 1:5, y = 6:10)
+
+vibing(z, mean)
+```
