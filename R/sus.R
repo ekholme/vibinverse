@@ -6,7 +6,7 @@
 #' @param true Vector to return if condition is `on_god`
 #' @param false Vector to return if condition is `cap`
 #'
-#' @return
+#' @return A vector the same length as `condition`
 #'
 #' @export
 #'

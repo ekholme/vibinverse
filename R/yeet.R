@@ -5,7 +5,7 @@
 #' @param x A dataframe to yeet columns from
 #' @param cols Columns to yeet. Currently requires quoted column names
 #'
-#' @return
+#' @return A dataframe
 #'
 #' @export
 #'
@@ -13,6 +13,8 @@
 #'     yeet(mtcars, c("mpg", "cyl"))
 #' }
 yeet <- function(x, cols) {
+    stopifnot(is.character(cols))
+
     keep_cols <- setdiff(names(x), cols)
 
     x[, keep_cols]
